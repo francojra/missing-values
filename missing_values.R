@@ -20,4 +20,10 @@
 ## com uma discussão relacionada sobre grupos vazios, causados por níveis de fatores 
 ## que não aparecem nos dados.
 
+# Pré-requisitos ---------------------------------------------------------------------------------------------------------------------------
+
+## As funções para trabalhar com dados ausentes vem principalmente do dplyr e tidyr,
+## que são membros principais do tidyverse.
+
+library(tidyverse)
 
