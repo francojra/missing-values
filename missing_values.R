@@ -80,9 +80,19 @@ na_if(x, -99)
 
 ## NaN
 
-## Antes de continuarmos, existe um especial tipo de valor faltante
+## Antes de continuarmos, existe um especial tipo de valor faltante que você pode
+## encontrar de vez em quando: um NaN (pronunciado "nan"), ou not a number (não é
+## um número). Não é tão importante saber porque geralmente se comporta exatamente 
+## como NA:
 
+x <- c(NA, NaN)
+x * 10
 
+x == 1
+
+is.na(x)
+
+## 
 
 
 
