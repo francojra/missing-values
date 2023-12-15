@@ -68,5 +68,14 @@ coalesce(x, 0)
 ## Às vezes você encontrará o problema oposto, onde algum valor concreto representa,
 ## na verdade, um valor ausente. Isso é típico quando oa dados são gerados por
 ## softwares mais antigos que não tem uma maneira certa de representar os valores
-## faltantes, então esses softwares usam
+## faltantes, então esses softwares usam algum valor especial do tipo 99 ou -999.
+
+## Se possível, modifique isso ao ler os dados usando o argumento 'na' para 
+## readr::read_csv(), por exemplo, read_csv(path, na = "99"). Se você descobrir
+## o problema depois, ou a fonte dos seus dados não permitir uma forma de lidar
+## com isso na leitura, você pode usar dplyr::na_if():
+
+x <- c(1, 4, 5, 7, -99)
+na_if(x, -99)
+
 
