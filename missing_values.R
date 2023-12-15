@@ -29,4 +29,20 @@ library(tidyverse)
 
 # Valores faltantes explícitos ---------------------------------------------------------------------------------------------
 
+## Para começar, vamos explorar algumas ferramentas úteis para criar ou eliminar 
+## valores faltantes explícitos, ou seja, células onde você ver um NA.
+
+## Última observação levada adiante
+
+## Um uso comum para valores faltantes
+
+
+
+
+
+
+
+
+
+
 
