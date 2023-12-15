@@ -52,6 +52,10 @@ treatment <- tribble(
 treatment |>
   fill(everything())
 
+## Esse tratamento algumas vezes é chamado de "Última observação adiante", ou
+## ou locf (last observation carried forward) para abreviar. Você pode usar o
+## argumento .direction para preencher valores faltantes que tem sido gerados
+## de maneiras mais exóticas.
 
 
 
