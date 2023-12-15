@@ -65,5 +65,6 @@ treatment |>
 x <- c(1, 4, 5, 7, NA)
 coalesce(x, 0)
 
-
+## Às vezes você encontrará o problema oposto, onde algum valor concreto representa,
+## na verdade, um valor ausente.
 
