@@ -60,10 +60,10 @@ treatment |>
 ## Vaores fixos
 
 ## Algumas vezes valores faltantes algum valor fixo ou conhecido, mais comumente
-## o valor 0. 
+## o valor 0. Você pode usar dplyr::coalesce() para substituir esses valores.
 
-
-
+x <- c(1, 4, 5, 7, NA)
+coalesce(x, 0)
 
 
 
