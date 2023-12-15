@@ -92,10 +92,19 @@ x == 1
 
 is.na(x)
 
-## 
+## Nos raros casos em que você precisa distinguir um NA de um NaN, você pode usar
+## is.nan(x)
 
+## Geralmente você encontrará um NaN quando você realizar uma operação matemática
+## que tem um resultado indeterminado.
 
+0 / 0 
 
+0 * Inf
+
+Inf - Inf
+
+sqrt(-1)
 
 
 
