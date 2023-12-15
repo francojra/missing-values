@@ -14,8 +14,8 @@
 ## tema em mais profundidade, para que você aprenda mais detalhes.
 
 ## Nós começaremos discutindo algumas ferramentas gerais para trabalhar com valores
-## perdidos gravados como NAs. Nós então exploraremos a ideia de valores implicitamente
-## ausentes, valores que são simplesmente ausentes nos seus dados, e mostrar algumas
+## faltantes gravados como NAs. Nós então exploraremos a ideia de valores implicitamente
+## faltantes, valores que são simplesmente ausentes nos seus dados, e mostrar algumas
 ## ferramentas que você pode usar para tornar esses valores explícitos. Terminaremos 
 ## com uma discussão relacionada sobre grupos vazios, causados por níveis de fatores 
 ## que não aparecem nos dados.
@@ -77,5 +77,19 @@ coalesce(x, 0)
 
 x <- c(1, 4, 5, 7, -99)
 na_if(x, -99)
+
+## NaN
+
+## Antes de continuarmos, existe um especial tipo de valor faltante
+
+
+
+
+
+
+
+
+
+
 
 
