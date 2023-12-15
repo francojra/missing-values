@@ -34,9 +34,23 @@ library(tidyverse)
 
 ## Última observação levada adiante
 
-## Um uso comum para valores faltantes
+## Um uso comum para valores faltantes é por conveniência da entrada de dados.Quando 
+## os dados são inseridos manualmente, os valores ausentes às vezes indicam que o 
+## valor da linha anterior foi repetido (ou passado adiante):
 
+treatment <- tribble(
+  ~person,           ~treatment, ~response,
+  "Derrick Whitmore", 1,         7,
+  NA,                 2,         10,
+  NA,                 3,         NA,
+  "Katherine Burke",  1,         4
+)
 
+## Você pode preencher esses valores faltantes com tidyr::fill(). Ele funciona como um
+## select() pegando um conjunto de colunas:
+
+treatment |>
+  fill(everything())
 
 
 
