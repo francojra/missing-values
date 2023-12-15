@@ -1,11 +1,11 @@
-# Missing values -----------------------------------------------------------------------------------------------------------
+# Valores Faltantes (Missing Values) ---------------------------------------------------------------------------------------
 # Autoria do script: Jeanne Franco -----------------------------------------------------------------------------------------
 # Data: 02/12/23 -----------------------------------------------------------------------------------------------------------
 # Fonte: https://r4ds.hadley.nz/missing-values -----------------------------------------------------------------------------
 
 # Introdução ---------------------------------------------------------------------------------------------------------------
 
-## Você já tem aprendido o básico sobre valores perdidos (missing values) 
+## Você já tem aprendido o básico sobre valores faltantes (missing values) 
 ## anteriormente neste livro.
 ## Primeiro você viu sobre no capítulo 1 em que eles resultam em um aviso quando
 ## ao fazer um gráfico, bem como na seção 3.5.2 onde interferiram nos cálculos das
@@ -20,10 +20,13 @@
 ## com uma discussão relacionada sobre grupos vazios, causados por níveis de fatores 
 ## que não aparecem nos dados.
 
-# Pré-requisitos ---------------------------------------------------------------------------------------------------------------------------
+# Pré-requisitos -----------------------------------------------------------------------------------------------------------
 
 ## As funções para trabalhar com dados ausentes vem principalmente do dplyr e tidyr,
 ## que são membros principais do tidyverse.
 
 library(tidyverse)
+
+# Valores faltantes explícitos ---------------------------------------------------------------------------------------------
+
 
