@@ -153,4 +153,22 @@ stocks |>
     values_from = price
   )
 
+## Por padrão, o formato longer (mais longo) dos dados preserva os valores
+## faltantes explícitos, mas se houver valores estruturalmente ausentes que 
+## só existem porque os dados não estão organizados, você pode descartá-los 
+## (torná-los implícitos) usando values_drop_na = TRUE. Veja os exemplos na
+## seção 5.2 para mais detalhes.
 
+stocks1 <- stocks |>
+  pivot_wider(
+    names_from = qtr, 
+    values_from = price
+  )
+
+stocks2 <- stocks1 |>
+  pivot_longer(
+    cols = c("1", "2", "3", "4"),
+    names_to = "Trimestre",
+    values_to = "Preços",
+    values_drop_na = TRUE) |>
+view()
