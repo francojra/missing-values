@@ -138,6 +138,19 @@ stocks <- tibble(
 ## seção seguinte discute algumas ferramentas para alternar entre valores faltantes
 ## explícitos e implícitos.
 
+## Pivoting (Girando os dados)
 
+## Você já tem visto uma ferramenta que torna valores faltantes implícitos em
+## explícitos e vice-versa: pivoting. Tornar os dados wider (mais amplo) torna
+## os valores faltantes implícitos em explícitos porque cada combinação de linhas
+## e novas colunas deve ter algum valor, Por exemplo, se nós girarmos a tabela
+## stocks para colocar os trimestres em colunas, ambos valores faltantes implícitos
+## se tornam explícitos:
+
+stocks |>
+  pivot_wider(
+    names_from = qtr, 
+    values_from = price
+  )
 
 
