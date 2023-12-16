@@ -106,6 +106,19 @@ Inf - Inf
 
 sqrt(-1)
 
+# Valores faltantes implícitos -------------------------------------------------------------------------------------------------------------
+
+## Até agora falamos sobre valores faltantes que são explicitamente faltantes,
+## por exemplo, você pode ver um NA em seus dados. Mas os valores faltantes também
+## podem ser implicitamente faltantes, como toda uma linha dos dados simplesmente
+## sem nenhum dado (célula vazia). Vamos ilustrar a diferença com um simples conjunto
+## de dados que registra o preço de algumas ações a cada trimestre.
+
+stocks <- tibble(
+  year  = c(2020, 2020, 2020, 2020, 2021, 2021, 2021),
+  qtr   = c(   1,    2,    3,    4,    2,    3,    4),
+  price = c(1.88, 0.59, 0.35,   NA, 0.92, 0.17, 2.66)
+) 
 
 
 
