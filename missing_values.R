@@ -132,6 +132,12 @@ stocks <- tibble(
 ## - Um valor faltante explícito é a presença de uma ausência.
 ## - Um valor faltante implícito é a ausência de uma presença.
 
+## Algumas vezes você quer tornar valores faltantes implícitos explícitos para
+## ter algo físico em seu trabalho. Em outros casos, os valores faltantes explícitos
+## fazem parte da estrutura dos dados e você deseja se livrar desses valores. A
+## seção seguinte discute algumas ferramentas para alternar entre valores faltantes
+## explícitos e implícitos.
+
 
 
 
