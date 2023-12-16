@@ -124,6 +124,13 @@ stocks <- tibble(
 
 ## - O preço do 4º trimestre de 2020 é explicitamente faltante, porque o valor
 ## está marcado com NA.
+## - As informações do 1º trimestre de 2021 está implicitamente faltando, ou seja,
+## simplemente não aparecem no conjunto de dados.
+
+## Uma forma para pensar nessa diferença é com o Zen-like Koan:
+
+## - Um valor faltante explícito é a presença de uma ausência.
+## - Um valor faltante implícito é a ausência de uma presença.
 
 
 
