@@ -120,7 +120,10 @@ stocks <- tibble(
   price = c(1.88, 0.59, 0.35,   NA, 0.92, 0.17, 2.66)
 ) 
 
+## Esse conjunto de dados tem duas informações faltantes
 
+## - O preço do 4º trimestre de 2020 é explicitamente faltante, porque o valor
+## está marcado com NA.
 
 
 
