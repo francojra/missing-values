@@ -200,7 +200,9 @@ stocks |>
 
 ## Em alguns casos, o conjunto completo de observações não pode ser gerado por uma
 ## simples combinação de variáveis. Neste caso, você pode fazer manualmente o que
-## o complete faz para você: cria um data frame que contem
+## o complete faz para você: cria um data frame que contem todas as linhas que deveriam
+## existir (usando qualquer combinação de técnicas que você precisar),então combine esse
+## data frame com seu original conjunto de dados usando dplyr::full_join().
 
 
 
