@@ -199,7 +199,8 @@ stocks |>
 ## todos os valores de min(x) a max(x) espaçados por 1.
 
 ## Em alguns casos, o conjunto completo de observações não pode ser gerado por uma
-## simples combinação de variáveis.
+## simples combinação de variáveis. Neste caso, você pode fazer manualmente o que
+## o complete faz para você: cria um data frame que contem
 
 
 
