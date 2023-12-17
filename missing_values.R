@@ -180,7 +180,8 @@ view()
 ## Por exemplo, nós sabemos que todas as combinações do ano e do trimestre deveriam
 ## existir nos dados de ações (stocks):
 
-
+stocks |>
+  complete(year, qtr)
 
 
 
