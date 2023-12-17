@@ -172,3 +172,19 @@ stocks2 <- stocks1 |>
     values_to = "Preços",
     values_drop_na = TRUE) |>
 view()
+
+## Complete (Completo)
+
+## tidyr::complete() permite a você gerar valores faltantes explícitos por promover
+## um conjunto de variáveis que define a combinação de linhas que deveriam existir.
+## Por exemplo, nós sabemos que todas as combinações do ano e do trimestre deveriam
+## existir nos dados de ações (stocks):
+
+
+
+
+
+
+
+
+
