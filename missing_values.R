@@ -198,6 +198,10 @@ stocks |>
 ## presentes, você poderá usar full_seq(x, 1) para gerar todos os valores para gerar 
 ## todos os valores de min(x) a max(x) espaçados por 1.
 
+x <- c(7, 5, 6, 2)
+
+full_seq(x, 1)
+
 ## Em alguns casos, o conjunto completo de observações não pode ser gerado por uma
 ## simples combinação de variáveis. Neste caso, você pode fazer manualmente o que
 ## o complete faz para você: cria um data frame que contem todas as linhas que deveriam
