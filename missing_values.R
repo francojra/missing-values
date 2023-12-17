@@ -194,8 +194,12 @@ stocks |>
   complete(year = 2019:2021, qtr) |>
   view()
 
+## Se o intervalo de uma variável estiver correto, mas nem todos os valores estiverem
+## presentes, você poderá usar full_seq(x, 1) para gerar todos os valores para gerar 
+## todos os valores de min(x) a max(x) espaçados por 1.
 
-
+## Em alguns casos, o conjunto completo de observações não pode ser gerado por uma
+## simples combinação de variáveis.
 
 
 
