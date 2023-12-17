@@ -208,5 +208,17 @@ full_seq(x, 1)
 ## existir (usando qualquer combinação de técnicas que você precisar),então combine esse
 ## data frame com seu original conjunto de dados usando dplyr::full_join().
 
+meus_dados <- tibble(
+  year  = c(2022, 2022, 2022, 2023, 2023, 2023),
+  qtr   = c(   1,    2,    3,    4,    2,    3),
+  price = c(1.88, 0.59, 0.35,   NA, 0.92, 0.17)
+) 
 
+stocks <- tibble(
+  year  = c(2020, 2020, 2020, 2020, 2021, 2021, 2021),
+  qtr   = c(   1,    2,    3,    4,    2,    3,    4),
+  price = c(1.88, 0.59, 0.35,   NA, 0.92, 0.17, 2.66)
+) 
 
+conjunto <- dplyr::full_join(meus_dados, stocks)
+view(conjunto)
