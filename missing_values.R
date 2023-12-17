@@ -190,6 +190,10 @@ stocks |>
 ## de 2019 a 2021, então você poderia explicitamente fornecer esses valores para 
 ## ano: 
 
+stocks |>
+  complete(year = 2019:2021, qtr) |>
+  view()
+
 
 
 
