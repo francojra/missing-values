@@ -183,6 +183,12 @@ view()
 stocks |>
   complete(year, qtr)
 
+## Basicamente, você irá chamar a função complete() com os nomes das variáveis que
+## existem nos seus dados, preenchendo as combinações que faltam. No entanto, às vezes
+## as variáveis individuais estão incompletas, então você pode fornecer seus próprios 
+## dados. Por exemplo, você pode saber que o conjunto de dados stocks deve funcionar
+## de 2019 a 2021, então você poderia explicitamente fornecer esses valores para 
+## ano: 
 
 
 
