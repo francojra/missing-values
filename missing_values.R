@@ -222,3 +222,26 @@ stocks <- tibble(
 
 conjunto <- dplyr::full_join(meus_dados, stocks)
 view(conjunto)
+
+## Joins (Juntar)
+
+## Isso nos traz uma outra importante forma de revelar valores faltantes implícitos:
+## joins. Você irá aprender mais sobre joins no capítulo 19, mas nós queremos rapidamente
+## mencionar sobre joins aqui, já que muitas vezes você só pode saber que valores
+## estão faltante em um conjunto de dados quando você o compara com outro:
+
+## dplyr::anti_join(x, y) é uma ferramenta útil aqui porque ele seleciona apenas
+## as linhas em x que não tem match em y. Por exemplo, nós podemos usar dois
+## anti_join()s para revelar que nós estamos perdendo informações para quatro
+## aeroportos e 722 aviões mencionados nos dados flights:
+
+library(nycflights13)
+
+flights |> 
+  distinct(faa = dest) |> 
+  anti_join(airports)
+
+
+flights |> 
+  distinct(tailnum) |> 
+  anti_join(planes)
