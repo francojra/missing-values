@@ -280,5 +280,30 @@ ggplot(health, aes(x = smoker)) +
   geom_bar() +
   scale_x_discrete(drop = FALSE)
 
+## O mesmo problema surge de forma mais geral com dplyr::group_by(). E novamente você
+## pode usar .drop = FALSE para manter todos os níveis dos fatores:
+
+health |> 
+  group_by(smoker, .drop = FALSE) |> 
+  summarize(
+    n = n(),
+    mean_age = mean(age),
+    min_age = min(age),
+    max_age = max(age),
+    sd_age = sd(age)
+  ) |>
+  view()
+
+## Nós obtemos alguns resultados interessantes aqui porque quando você resume os dados
+## de um grupo vazio, as funções de resumo (summary) são aplicadas a vetores de 
+## comprimento zero. Existe uma importante distinção entre vetores vazios com comprimento
+## zero e valores faltantes, que tem cada um deles tem comprimento 1.
+
+# A vector containing two missing values
+x1 <- c(NA, NA)
+length(x1)
 
 
+# A vector containing nothing
+x2 <- numeric()
+length(x2)
