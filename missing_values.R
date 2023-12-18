@@ -307,3 +307,13 @@ length(x1)
 # A vector containing nothing
 x2 <- numeric()
 length(x2)
+
+## Todas as funções de resumo trabalha com vetores de comprimento zero, mas eles podem
+## retornar resultados que surpreendem a primeira vista. Aqui nós vemos mean(age) retornar
+## NaN porque mean(age) = sum(age)/length(age) que aqui é 0/0.
+
+
+
+
+
+
