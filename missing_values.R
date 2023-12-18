@@ -249,4 +249,11 @@ flights |>
 # Fatores e grupos vazios ------------------------------------------------------------------------------------------------------------------
 
 ## Um último tipo de falta de dados é o grupo vazio, um grupo que não contem qualquer
-## observação, que pode surgir ao trabalhar com fatores.
+## observação, que pode surgir ao trabalhar com fatores. Por exemplo, imagine que temos
+## um conjunto de dados que contem algumas informações sobre a saúde das pessoas:
+
+health <- tibble(
+  name   = c("Ikaia", "Oletta", "Leriah", "Dashay", "Tresaun"),
+  smoker = factor(c("no", "no", "no", "no", "no"), levels = c("yes", "no")),
+  age    = c(34, 88, 75, 47, 56),
+)
