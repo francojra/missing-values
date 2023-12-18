@@ -245,3 +245,8 @@ flights |>
 flights |> 
   distinct(tailnum) |> 
   anti_join(planes)
+
+# Fatores e grupos vazios ------------------------------------------------------------------------------------------------------------------
+
+## Um último tipo de falta de dados é o grupo vazio, um grupo que não contem qualquer
+## observação, que pode surgir ao trabalhar com fatores.
