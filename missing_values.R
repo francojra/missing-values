@@ -261,3 +261,24 @@ health <- tibble(
 ## E nós queremos contar o número de fumantes com dplyr::count():
 
 health |> count(smoker)
+
+## Esse conjunto de dados contem apenas não-fumantes, mas nós sabemos que existem 
+## fumantes; o grupo de não-fumantes está vazio. Nós podemos usar count() para manter 
+## todos os grupos, mesmo aqueles que não vemos nos dados usando .drop = FALSE:
+
+health |> count(smoker, .drop = FALSE)
+
+## O mesmo princípio se aplica aos eixos discretos do ggplot2, que irá também pular
+## os níveis que não apresentam nenhum valor. Você pode forçar o ggplot2 a exibir
+## fornecendo drop = FALSE para os apropriados eixos discretos:
+
+ggplot(health, aes(x = smoker)) +
+  geom_bar() +
+  scale_x_discrete()
+
+ggplot(health, aes(x = smoker)) +
+  geom_bar() +
+  scale_x_discrete(drop = FALSE)
+
+
+
