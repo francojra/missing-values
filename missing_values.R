@@ -332,6 +332,14 @@ health |>
 ## A principal desvantagem dessa abrodagem é que você obtem um NA pela contagem,
 ## mesmo você sabendo que deveria ser zero.
 
+# Resumo -----------------------------------------------------------------------------------------------------------------------------------
 
+## Valors faltantes são estranhos! Algumas vezes os valores faltantes são gravados
+## como um explícito NA, mas outras vezes você apenas nota pela ausência deles.
+## Esse capítulo forneceu algumas ferramentas para você trabalhar com valores
+## faltantes explícitos, ferramentas para cobrir valores faltantes implícitos, e
+## discutiu algumas formas que implícitos se tornam explícitos e vice-versa.
+
+## 
 
 
