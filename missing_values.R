@@ -57,7 +57,7 @@ treatment |>
 ## argumento .direction para preencher valores faltantes que tem sido gerados
 ## de maneiras mais exóticas.
 
-## Vaores fixos
+## Valores fixos
 
 ## Algumas vezes valores faltantes algum valor fixo ou conhecido, mais comumente
 ## o valor 0. Você pode usar dplyr::coalesce() para substituir esses valores.
