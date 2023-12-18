@@ -310,9 +310,27 @@ length(x2)
 
 ## Todas as funções de resumo trabalha com vetores de comprimento zero, mas eles podem
 ## retornar resultados que surpreendem a primeira vista. Aqui nós vemos mean(age) retornar
-## NaN porque mean(age) = sum(age)/length(age) que aqui é 0/0.
+## NaN porque mean(age) = sum(age)/length(age) que aqui é 0/0. max() and min() retornam 
+## -Inf e Inf para vetores vazios, então se você combina os resultados com um vetor não vazio
+## de um novo conjunto de dados e recalcula você irá obter os mínimos e máximos dos novos
+## dados.
 
+## Algumas vezes uma abordagem mais simples é calcular os resumos dos dados e então
+## tornar os valores faltantes implícitos em valores faltantes explícitos com complete().
 
+health |> 
+  group_by(smoker) |> 
+  summarize(
+    n = n(),
+    mean_age = mean(age),
+    min_age = min(age),
+    max_age = max(age),
+    sd_age = sd(age)
+  ) |> 
+  complete(smoker)
+
+## A principal desvantagem dessa abrodagem é que você obtem um NA pela contagem,
+## mesmo você sabendo que deveria ser zero.
 
 
 
