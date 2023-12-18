@@ -257,3 +257,7 @@ health <- tibble(
   smoker = factor(c("no", "no", "no", "no", "no"), levels = c("yes", "no")),
   age    = c(34, 88, 75, 47, 56),
 )
+
+## E nós queremos contar o número de fumantes com dplyr::count():
+
+health |> count(smoker)
