@@ -1,2 +1,7 @@
-# missing-values
-Script sobre o capítulo de valores perdidos (Missing values) do livro R for Data Science da 2ª Edição.
+# Valores Faltantes (Missing Values)
+
+### Autoria do script: Jeanne Franco
+### Data: 02/12/23
+### Fonte: https://r4ds.hadley.nz/missing-values
+
+#### Tópicos do capítulo:
