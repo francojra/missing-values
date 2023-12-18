@@ -313,7 +313,7 @@ length(x2)
 ## NaN porque mean(age) = sum(age)/length(age) que aqui é 0/0. max() and min() retornam 
 ## -Inf e Inf para vetores vazios, então se você combina os resultados com um vetor não vazio
 ## de um novo conjunto de dados e recalcula você irá obter os mínimos e máximos dos novos
-## dados.
+## dados. In other words, min(c(x, y)) is always equal to min(min(x), min(y)).
 
 ## Algumas vezes uma abordagem mais simples é calcular os resumos dos dados e então
 ## tornar os valores faltantes implícitos em valores faltantes explícitos com complete().
@@ -340,6 +340,9 @@ health |>
 ## faltantes explícitos, ferramentas para cobrir valores faltantes implícitos, e
 ## discutiu algumas formas que implícitos se tornam explícitos e vice-versa.
 
-## 
+## No próximo capítulo, abordaremos o capítulo final desta parte do livro: joins.
+## Está é uma pequena mudança em relação aos capítulos até agora porque estaremos
+## discutindo ferramentas que trabalham com data frames como um todo, não algo
+## que você coloca dentro do conjunto de dados (data frame).
 
 
